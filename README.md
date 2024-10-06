@@ -10,7 +10,7 @@ Archivos del Proyecto
 
 Cómo Usar
 1. Clona el repositorio o descarga los archivos.
-2. Abre `index.html` en tu navegador.
+2. Abre index.html en tu navegador.
 3. Usa el teclado o haz clic en las teclas del piano para tocar notas.
 
 Contribuciones
