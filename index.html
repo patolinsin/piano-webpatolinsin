@@ -15,6 +15,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
             margin-top: 20px; /* Espacio para el texto */
+            flex-wrap: wrap; /* Permitir que los elementos se ajusten */
         }
 
         .piano::before, .piano::after {
@@ -43,7 +44,17 @@
             font-size: 30px; /* Tamaño de la fuente */
             position: absolute; /* Posición absoluta para centrar */
             width: 100%; /* Ancho completo */
-            top: 245px; /* Ajusta según sea necesario */
+            top: 243px; /* Ajusta según sea necesario */
+        }
+
+        .slogan {
+            text-align: center;
+            font-family: 'Dancing Script', cursive; /* Estilo manuscrito */
+            color: #000000; /* Color negro */
+            font-size: 20px; /* Tamaño de la fuente más pequeño */
+            position: absolute; /* Posición absoluta para centrar */
+            width: 100%; /* Ancho completo */
+            top: 543px; /* Ajusta según sea necesario */
         }
 
         .watermark {
@@ -71,15 +82,37 @@
             bottom: 10px;
             right: 10px;
         }
+
+        .bottom-centre {
+        position: absolute; /* Asegúrate de que la posición sea absoluta */
+        bottom: 10px;
+        left: 50%; /* Mueve el elemento al 50% del ancho de la página */
+        transform: translateX(-50%); /* Ajusta el elemento para que esté centrado */
+        }
+
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            .author {
+                font-size: 24px; /* Tamaño de fuente más pequeño en móviles */
+                top: 220px; /* Ajustar posición */
+            }
+
+            .slogan {
+                font-size: 18px; /* Tamaño de fuente más pequeño para el eslogan */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="author">Creado por: - Daniel Villagómez - el 05/10/2024</div>
+    <div class="slogan">La gloria de este trabajo para - Dios - y el agradecimiento para la Fmlia Pluas que me acogio con tanto cariño y respeto.</div>
     
-    <img src="file:///C:/Users/HOME/Desktop/amores2.png" alt="Marca de agua" class="watermark top-left"> <!-- Esquina superior izquierda -->
-    <img src="file:///C:/Users/HOME/Desktop/PARA%20UNIVERSIDAD.png" alt="Marca de agua" class="watermark top-right"> <!-- Esquina superior derecha -->
-    <img src="file:///C:/Users/HOME/Desktop/amores4.png" alt="Marca de agua" class="watermark bottom-left"> <!-- Esquina inferior izquierda -->
-    <img src="file:///C:/Users/HOME/Desktop/amores1.png" alt="Marca de agua" class="watermark bottom-right"> <!-- Esquina inferior derecha -->
+    <img src="file:///C:\Users\HOME\Desktop\PIANO WEB/amores2.png" alt="Marca de agua" class="watermark top-left"> <!-- Esquina superior izquierda -->
+    <img src="file:///C:\Users\HOME\Desktop\PIANO WEB/PARA%20UNIVERSIDAD.png" alt="Marca de agua" class="watermark top-right"> <!-- Esquina superior derecha -->
+    <img src="file:///C:\Users\HOME\Desktop\PIANO WEB/amores4.png" alt="Marca de agua" class="watermark bottom-left"> <!-- Esquina inferior izquierda -->
+    <img src="file:///C:\Users\HOME\Desktop\PIANO WEB/amores1.png" alt="Marca de agua" class="watermark bottom-right"> <!-- Esquina inferior derecha -->
+    <img src="file:///C:\Users\HOME\Desktop\PIANO WEB/veci.png" alt="Marca de agua" class="watermark bottom-centre"> <!-- centro abajo -->
 
     <div class="piano">
         <div class="key white" data-frequency="261.63">Do</div>

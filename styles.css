@@ -24,6 +24,7 @@ body {
     align-items: flex-end;
     font-size: 15px;
     color: #000;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Suavizar transiciones */
 }
 
 .white {
@@ -59,11 +60,12 @@ body {
 .black:nth-of-type(22) { left: 415px; } /* Mi# */
 
 .key:hover {
-    opacity: 0.5;
+    opacity: 0.5; /* Efecto al pasar el mouse */
 }
 
 /* Clase para resaltar la tecla activa */
 .active {
     background-color: yellow; /* Cambiar el color de fondo al presionar */
     opacity: 0.7; /* Cambiar la opacidad para dar un efecto visual */
+    transition: background-color 0.2s ease, opacity 0.2s ease; /* Suavizar transiciones */
 }
