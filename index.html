@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        .piano {
+            display: flex;
+            position: relative;
+            border: 5px solid #3b3b3b; /* Marco del piano */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            margin-top: 20px; /* Espacio para el texto */
+        }
+
+        .piano::before, .piano::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            width: 10px;
+            height: 20px;
+            background-color: #000; /* Color de las patas */
+            border-radius: 5px;
+        }
+
+        .piano::before {
+            left: 30px; /* Izquierda */
+        }
+
+        .piano::after {
+            right: 30px; /* Derecha */
+        }
+
+        .author {
+            text-align: center;
+            font-family: 'Dancing Script', cursive; /* Estilo manuscrito */
+            color: #8A2BE2; /* Color lila */
+            margin-bottom: -10px; /* Espacio negativo para acercar al piano */
+            font-size: 30px; /* Tamaño de la fuente */
+            position: absolute; /* Posición absoluta para centrar */
+            width: 100%; /* Ancho completo */
+            top: 245px; /* Ajusta según sea necesario */
+        }
+
+        .watermark {
+            position: absolute;
+            opacity: 0.2; /* Transparencia para la marca de agua */
+            width: 100px; /* Ajusta el tamaño de la imagen */
+        }
+
+        .top-left {
+            top: 10px;
+            left: 10px;
+        }
+
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+
+        .bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="author">Creado por: - Daniel Villagómez - el 05/10/2024</div>
+    
+    <img src="file:///C:/Users/HOME/Desktop/amores2.png" alt="Marca de agua" class="watermark top-left"> <!-- Esquina superior izquierda -->
+    <img src="file:///C:/Users/HOME/Desktop/PARA%20UNIVERSIDAD.png" alt="Marca de agua" class="watermark top-right"> <!-- Esquina superior derecha -->
+    <img src="file:///C:/Users/HOME/Desktop/amores4.png" alt="Marca de agua" class="watermark bottom-left"> <!-- Esquina inferior izquierda -->
+    <img src="file:///C:/Users/HOME/Desktop/amores1.png" alt="Marca de agua" class="watermark bottom-right"> <!-- Esquina inferior derecha -->
+
+    <div class="piano">
+        <div class="key white" data-frequency="261.63">Do</div>
+        <div class="key white" data-frequency="293.66">Re</div>
+        <div class="key white" data-frequency="329.63">Mi</div>
+        <div class="key black" data-frequency="277.18">Do#</div>
+        <div class="key white" data-frequency="349.23">Fa</div>
+        <div class="key black" data-frequency="311.13">Re#</div>
+        <div class="key white" data-frequency="392.00">Sol</div>
+        <div class="key black" data-frequency="369.99">Fa#</div>
+        <div class="key white" data-frequency="440.00">La</div>
+        <div class="key black" data-frequency="415.30">Sol#</div>
+        <div class="key white" data-frequency="493.88">Si</div>
+        <div class="key black" data-frequency="466.16">La#</div>
+        <div class="key white" data-frequency="523.25">Do</div>
+        <div class="key black" data-frequency="587.33">Re#</div>
+        <div class="key white" data-frequency="554.37">Re</div>
+        <div class="key black" data-frequency="698.46">Fa#</div>
+        <div class="key white" data-frequency="587.33">Mi</div>
+        <div class="key black" data-frequency="783.99">Sol#</div>
+        <div class="key white" data-frequency="659.25">Fa</div>
+        <div class="key black" data-frequency="880.00">La#</div>
+        <div class="key white" data-frequency="739.99">Sol</div>
+        <div class="key white" data-frequency="830.61">La</div>
+        <div class="key white" data-frequency="987.77">Si</div>
+        <div class="key white" data-frequency="1046.50">Do</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
